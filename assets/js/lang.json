@@ -1,0 +1,30 @@
+{
+  "home": {
+    "en": "Home",
+    "ko": "홈"
+  },
+  "about": {
+    "en": "About Us",
+    "ko": "회사 소개"
+  },
+  "tours": {
+    "en": "Tours",
+    "ko": "여행"
+  },
+  "destinations": {
+    "en": "Destinations",
+    "ko": "목적지"
+  },
+  "blog": {
+    "en": "Blog",
+    "ko": "블로그"
+  },
+  "contact": {
+    "en": "Contact Us",
+    "ko": "문의하기"
+  },
+  "booking": {
+    "en": "Booking Now",
+    "ko": "지금 예약"
+  }
+}
