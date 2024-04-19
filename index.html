@@ -26,6 +26,19 @@
     href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comforter+Brush&family=Heebo:wght@400;500;600;700&display=swap"
     rel="stylesheet">
     <script src="./assets/js/lang.json" id="lang-data" type="application/json"></script>
+
+    <style>
+      .language-popup {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;
+  z-index: 999;
+
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+    </style>
 </head>
 
 <body id="top">
@@ -51,41 +64,32 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link"  data-lang="home">Home</a>
+            <a href="./index.html" class="navbar-link"  data-lang="home">Home</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-lang="about">About Us</a>
+            <a href="./about.html" class="navbar-link" data-lang="about">About Us</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-lang="tours">Tours</a>
+            <a href="./tours.html" class="navbar-link" data-lang="tours">Tours</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-lang="destinations">Destinations</a>
+            <a href="./destination.html" class="navbar-link" data-lang="destinations">Destinations</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-lang="blog">Blog</a>
+            <a href="./blog.html" class="navbar-link" data-lang="blog">Blog</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-lang="contact">Contact Us</a>
+            <a href="./contact.html" class="navbar-link" data-lang="contact">Contact Us</a>
           </li>
 
         </ul>
 
-        <a href="#" class="btn btn-secondary" data-lang="booking">Booking Now</a>
-        
-        <div class="language-icons" style="    margin: 0px 0px 0px 20px; height: 10px;" >
-          <button class="lang-icon" data-lang="en">
-            <img src="./assets/images/Flag_of_the_United_Kingdom.png" alt="English" width="20" height="20">
-          </button>
-          <button class="lang-icon" data-lang="ko">
-            <img src="./assets/images/Flag_of_South_Korea.png" alt="한국어" width="20" height="20">
-          </button>
-        </div>
+        <a href="./booking.html" class="btn btn-secondary" data-lang="booking">Booking Now</a>
   
       </nav>
 
@@ -102,7 +106,15 @@
       <!-- 
         - #HERO
       -->
-
+      <div class="language-popup" style="    margin: 0px 0px 0px 20px; height: 10px;" >
+        <button class="lang-icon" data-lang="en">
+          <img src="./assets/images/Flag_of_the_United_Kingdom.png" alt="English" width="20" height="20">
+        </button>
+        <button class="lang-icon" data-lang="ko">
+          <img src="./assets/images/Flag_of_South_Korea.png" alt="한국어" width="20" height="20">
+        </button>
+      </div>
+      
       <section class="section hero"
         style="background-image: url('./assets/images/hero-bg-bottom.png') url('./assets/images/hero-bg-top.png')">
         <div class="container">
@@ -117,16 +129,16 @@
 
             <p class="section-subtitle" data-lang="hero_subtitle">Explore Your Travel</p>
 
-            <h2 class="hero-title">Trusted Travel Agency</h2>
+            <h2 class="hero-title" data-lang="hero_title">Trusted Travel Agency</h2>
 
-            <p class="hero-text">
+            <p class="hero-text" data-lang="quote">
               I travel not to go anywhere, but to go. I travel for travel's sake the great affair is to move.
             </p>
 
             <div class="btn-group">
-              <a href="#" class="btn btn-primary">Contact Us</a>
+              <a href="./contact.html" class="btn btn-primary" data-lang="contact">Contact Us</a>
 
-              <a href="#" class="btn btn-outline">Learn More</a>
+              <a href="./about.html" class="btn btn-outline" data-lang="learn_more_btn">Learn More</a>
             </div>
 
           </div>
@@ -150,14 +162,14 @@
       <section class="section destination">
         <div class="container">
 
-          <p class="section-subtitle">Destinations</p>
+          <p class="section-subtitle" data-lang="destinations">Destinations</p>
 
-          <h2 class="h2 section-title">Choose Your Place</h2>
+          <h2 class="h2 section-title" data-lang="destinations_subtitle">Choose Your Place</h2>
 
           <ul class="destination-list">
 
             <li class="w-50">
-              <a href="#" class="destination-card">
+              <a href="./bana.html" class="destination-card">
 
                 <figure class="card-banner">
                   <img src="./assets/images/destination-1.jpg" width="1140" height="1100" loading="lazy"
@@ -165,16 +177,16 @@
                 </figure>
 
                 <div class="card-content">
-                  <p class="card-subtitle">Malé</p>
+                  <p class="card-subtitle">Da Nang</p>
 
-                  <h3 class="h3 card-title">Maldives</h3>
+                  <h3 class="h3 card-title">Ba Na Hill</h3>
                 </div>
 
               </a>
             </li>
 
             <li class="w-50">
-              <a href="#" class="destination-card">
+              <a href="./bana.html" class="destination-card">
 
                 <figure class="card-banner">
                   <img src="./assets/images/destination-2.jpg" width="1140" height="1100" loading="lazy"
@@ -182,16 +194,16 @@
                 </figure>
 
                 <div class="card-content">
-                  <p class="card-subtitle">Bangkok</p>
+                  <p class="card-subtitle">Nha Trang</p>
 
-                  <h3 class="h3 card-title">Thailand</h3>
+                  <h3 class="h3 card-title">VinWonder</h3>
                 </div>
 
               </a>
             </li>
 
             <li>
-              <a href="#" class="destination-card">
+              <a href="./bana.html" class="destination-card">
 
                 <figure class="card-banner">
                   <img src="./assets/images/destination-3.jpg" width="1110" height="480" loading="lazy"
@@ -199,16 +211,16 @@
                 </figure>
 
                 <div class="card-content">
-                  <p class="card-subtitle">Kuala Lumpur</p>
+                  <p class="card-subtitle">Ho Chi Minh City</p>
 
-                  <h3 class="h3 card-title">Malaysia</h3>
+                  <h3 class="h3 card-title">Independence Palace</h3>
                 </div>
 
               </a>
             </li>
 
             <li>
-              <a href="#" class="destination-card">
+              <a href="./bana.html" class="destination-card">
 
                 <figure class="card-banner">
                   <img src="./assets/images/destination-4.jpg" width="1110" height="480" loading="lazy"
@@ -216,16 +228,16 @@
                 </figure>
 
                 <div class="card-content">
-                  <p class="card-subtitle">Kathmandu</p>
+                  <p class="card-subtitle">Hue Citadel</p>
 
-                  <h3 class="h3 card-title">Nepal</h3>
+                  <h3 class="h3 card-title">Imperial Palace</h3>
                 </div>
 
               </a>
             </li>
 
             <li>
-              <a href="#" class="destination-card">
+              <a href="./bana.html" class="destination-card">
 
                 <figure class="card-banner">
                   <img src="./assets/images/destination-5.jpg" width="1110" height="480" loading="lazy"
@@ -233,9 +245,9 @@
                 </figure>
 
                 <div class="card-content">
-                  <p class="card-subtitle">Jakarta</p>
+                  <p class="card-subtitle">Ha Noi</p>
 
-                  <h3 class="h3 card-title">Indonesia</h3>
+                  <h3 class="h3 card-title">Ho Chi Minh Mausoleum</h3>
                 </div>
 
               </a>
@@ -257,9 +269,9 @@
       <section class="section popular">
         <div class="container">
 
-          <p class="section-subtitle">Featured Tours</p>
+          <p class="section-subtitle" data-lang="featured_tours_subtitle">Featured Tours</p>
 
-          <h2 class="h2 section-title">Most Popular Tours</h2>
+          <h2 class="h2 section-title" data-lang="most_popular_tours_title">Most Popular Tours</h2>
 
           <ul class="popular-list">
 
@@ -269,20 +281,20 @@
                 <figure class="card-banner">
                   <a href="#">
                     <img src="./assets/images/popular-1.jpg" width="740" height="518" loading="lazy"
-                      alt="Kuala Lumpur, Malaysia" class="img-cover">
+                      alt="" class="img-cover">
                   </a>
 
                   <span class="card-badge">
                     <ion-icon name="time-outline"></ion-icon>
 
-                    <time datetime="P12D">12 Days</time>
+                    <time datetime="P12D">1 Days</time>
                   </span>
                 </figure>
 
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
+                    <div class="card-price">From $49.00</div>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -299,7 +311,7 @@
                     <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
                   </h3>
 
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+                  <address class="card-location">Da Nang, Mable mountain</address>
 
                 </div>
 
@@ -318,14 +330,14 @@
                   <span class="card-badge">
                     <ion-icon name="time-outline"></ion-icon>
 
-                    <time datetime="P12D">12 Days</time>
+                    <time datetime="P12D">1 Days</time>
                   </span>
                 </figure>
 
                 <div class="card-content">
 
                   <div class="card-wrapper">
-                    <div class="card-price">From $50.00</div>
+                    <div class="card-price">From $30.00</div>
 
                     <div class="card-rating">
                       <ion-icon name="star"></ion-icon>
@@ -342,7 +354,7 @@
                     <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
                   </h3>
 
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+                  <address class="card-location">Da Nang, Cham islands</address>
 
                 </div>
 
@@ -361,7 +373,7 @@
                   <span class="card-badge">
                     <ion-icon name="time-outline"></ion-icon>
 
-                    <time datetime="P12D">12 Days</time>
+                    <time datetime="P12D">1 Days</time>
                   </span>
                 </figure>
 
@@ -385,7 +397,7 @@
                     <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
                   </h3>
 
-                  <address class="card-location">Kuala Lumpur, Malaysia</address>
+                  <address class="card-location">Da Nang, Coconut forest</address>
 
                 </div>
 
@@ -410,9 +422,9 @@
 
           <div class="about-content">
 
-            <p class="section-subtitle">About Us</p>
+            <p class="section-subtitle" data-lang="about">About Us</p>
 
-            <h2 class="h2 section-title">Explore all tour of the world with us.</h2>
+            <h2 class="h2 section-title" data-lang="explore_all_tours_title">Explore all tour of the world with us.</h2>
 
             <p class="about-text">
               Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
@@ -429,7 +441,7 @@
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Tour guide</h3>
+                  <h3 class="h3 about-item-title" data-lang="tour_guide_title">Tour guide</h3>
 
                   <p class="about-item-text">
                     Lorem Ipsum available, but the majority have suffered alteration in some.
@@ -445,7 +457,7 @@
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Friendly price</h3>
+                  <h3 class="h3 about-item-title" data-lang="friendly_price_title">Friendly price</h3>
 
                   <p class="about-item-text">
                     Lorem Ipsum available, but the majority have suffered alteration in some.
@@ -461,7 +473,7 @@
                 </div>
 
                 <div class="about-item-content">
-                  <h3 class="h3 about-item-title">Reliable tour</h3>
+                  <h3 class="h3 about-item-title" data-lang="reliable_tour_title">Reliable tour</h3>
 
                   <p class="about-item-text">
                     Lorem Ipsum available, but the majority have suffered alteration in some.
@@ -472,7 +484,7 @@
 
             </ul>
 
-            <a href="#" class="btn btn-primary">Booking Now</a>
+            <a href="#" class="btn btn-primary" data-lang="booking">Booking Now</a>
 
           </div>
 
@@ -494,9 +506,9 @@
       <section class="section blog">
         <div class="container">
 
-          <p class="section-subtitle">From The Blog Post</p>
+          <p class="section-subtitle" data-lang="from_the_blog_post_subtitle">From The Blog Post</p>
 
-          <h2 class="h2 section-title">Latest News & Articles</h2>
+          <h2 class="h2 section-title" data-lang="latest_news_articles_title">Latest News & Articles</h2>
 
           <ul class="blog-list">
 
@@ -689,55 +701,27 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Top destination</p>
+            <p class="footer-list-title" data-lang="footer_list_title">Top destination</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Indonesia, Jakarta</a>
+            <a href="#" class="footer-link">Nha Trang</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Maldives, Malé</a>
+            <a href="#" class="footer-link">Da Nang</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Australia, Canberra</a>
+            <a href="#" class="footer-link">Hue</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Thailand, Bangkok</a>
+            <a href="#" class="footer-link">Ha Noi</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Morocco, Rabat</a>
-          </li>
-
-        </ul>
-
-        <ul class="footer-list">
-
-          <li>
-            <p class="footer-list-title">Categories</p>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Travel</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Lifestyle</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Fashion</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Education</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Food & Drink</a>
+            <a href="#" class="footer-link">Ho Chi Minh City</a>
           </li>
 
         </ul>
@@ -745,43 +729,71 @@
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Quick links</p>
+            <p class="footer-list-title" data-lang="footer_categories_title">Categories</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link" data-lang="travel">Travel</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Contact</a>
+            <a href="#" class="footer-link" data-lang="lifestyle">Lifestyle</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Tours</a>
+            <a href="#" class="footer-link" data-lang="fashion">Fashion</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Booking</a>
+            <a href="#" class="footer-link" data-lang="education">Education</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Terms & Conditions</a>
+            <a href="#" class="footer-link" data-lang="food_drink">Food & Drink</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title" data-lang="footer_quick_links_title">Quick links</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link" data-lang="about">About</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link" data-lang="contact">Contact</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link" data-lang="tours">Tours</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link" data-lang="booking">Booking</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link" data-lang="terms_conditions">Terms & Conditions</a>
           </li>
 
         </ul>
 
         <div class="footer-list">
 
-          <p class="footer-list-title">Get a newsletter</p>
+          <p class="footer-list-title" data-lang="footer_newsletter_title">Get a newsletter</p>
 
-          <p class="newsletter-text">
+          <p class="newsletter-text" data-lang="newsletter_text">
             For the latest deals and tips, travel no further than your inbox
           </p>
 
           <form action="" class="newsletter-form">
             <input type="email" name="email" required placeholder="Email address" class="newsletter-input">
 
-            <button type="submit" class="btn btn-primary">Subscribe</button>
+            <button type="submit" class="btn btn-primary" data-lang="subscribe_button">Subscribe</button>
           </form>
 
         </div>
@@ -790,10 +802,10 @@
 
       <div class="footer-bottom">
 
-        <a href="#" class="logo">Tourest</a>
+        <a href="#" class="logo">LigoTravel</a>
 
         <p class="copyright">
-          &copy; 2022 <a href="#" class="copyright-link">codewithsadee</a>. All Rights Reserved
+          &copy; 2022 <a href="#" class="copyright-link">byDN</a>. All Rights Reserved
         </p>
 
         <ul class="social-list">

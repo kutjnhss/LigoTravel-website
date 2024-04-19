@@ -26,5 +26,105 @@
   "booking": {
     "en": "Booking Now",
     "ko": "지금 예약"
-  }
+  },
+  "hero_subtitle": {
+    "en": "Explore Your Travel",
+    "ko": "여행을 탐험하세요"
+  },
+  "hero_title": {
+    "en": "Trusted Travel Agency",
+    "ko": "신뢰할 수 있는 여행사"
+  },
+  "quote": {
+    "en": "I travel not to go anywhere, but to go. I travel for travel's sake the great affair is to move.",
+    "ko": "나는 어디론가 가기 위해 여행하는 것이 아니라, 그냥 가기 위해 여행합니다. 나는 여행을 위해 여행하는 것입니다. 큰 일은 움직이는 것입니다."
+  },
+  "destinations_subtitle": {
+    "en": "Choose Your Place",
+    "ko": "당신의 장소를 선택하세요"
+  },
+  "learn_more_btn": {
+    "en": "Learn More",
+    "ko": "더 알아보기"
+  },
+  "featured_tours_subtitle": {
+    "en": "Featured Tours",
+    "ko": "주요 여행"
+  },
+  "most_popular_tours_title": {
+    "en": "Most Popular Tours",
+    "ko": "가장 인기 있는 여행"
+  },
+  "explore_all_tours_title": {
+    "en": "Explore all tour of the world with us.",
+    "ko": "우리와 함께 세계 모든 여행을 탐험하세요."
+  },
+  "tour_guide_title": {
+    "en": "Tour guide",
+    "ko": "여행 가,이드"
+  },
+  "friendly_price_title": {
+    "en": "Friendly price",
+    "ko": "친절한 가격"
+  },
+  "reliable_tour_title": {
+    "en": "Reliable tour",
+    "ko": "신뢰할 수 있는 여행"
+  },
+  "from_the_blog_post_subtitle": {
+    "en": "From The Blog Post",
+    "ko": "블로그 글에서"
+  },
+  "latest_news_articles_title": {
+    "en": "Latest News & Articles",
+    "ko": "최신 뉴스 및 기사"
+  },
+  "footer_list_title": {
+    "en": "Top destination",
+    "ko": "인기 목적지"
+  },
+  "footer_categories_title": {
+    "en": "Categories",
+    "ko": "카테고리"
+  },
+    "travel": {
+      "en": "Travel",
+      "ko": "여행"
+    },
+    "lifestyle": {
+      "en": "Lifestyle",
+      "ko": "라이프스타일"
+    },
+    "fashion": {
+      "en": "Fashion",
+      "ko": "패션"
+    },
+    "education": {
+      "en": "Education",
+      "ko": "교육"
+    },
+    "food_drink": {
+      "en": "Food & Drink",
+      "ko": "음식 & 음료"
+    },
+    "footer_quick_links_title": {
+      "en": "Quick links",
+      "ko": "빠른 링크"
+    },
+      "terms_conditions": {
+        "en": "Terms & Conditions",
+        "ko": "이용 약관"
+    },
+    "footer_newsletter_title": {
+      "en": "Get a newsletter",
+      "ko": "뉴스레터 받기"
+    },
+    "newsletter_text": {
+      "en": "For the latest deals and tips, travel no further than your inbox",
+      "ko": "최신 거래 및 팁을 위해, 인박스를 더 나아가지 마세요"
+    },
+    "subscribe_button": {
+      "en": "Subscribe",
+      "ko": "구독하기"
+    }
 }
